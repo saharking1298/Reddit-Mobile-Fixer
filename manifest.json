@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Reddit Mobile Fixer",
+    "version": "1.0",
+    "description": "Hide annoying warnings from Reddit mobile webpage",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.reddit.com/*"],
+        "js": ["main.js"]
+      }
+    ]
+}
+  
